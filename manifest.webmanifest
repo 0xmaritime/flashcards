@@ -1,0 +1,13 @@
+{
+  "name": "QA Interview Flashcards",
+  "short_name": "QA Flashcards",
+  "description": "QA interview questions with answers to say aloud. Study them in order or at random.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F4F6F8",
+  "theme_color": "#2F4BD8",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>QA Interview Flashcards</title>
+<meta name="description" content="QA interview questions with answers to say aloud. Study them in order or at random.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151C23" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="bar">
+      <h1>QA Flashcards</h1>
+      <div class="seg" role="group" aria-label="Card order">
+        <button type="button" id="modeSeq" data-mode="seq" aria-pressed="true">In order</button>
+        <button type="button" id="modeRnd" data-mode="rnd" aria-pressed="false">Random</button>
+      </div>
+    </div>
+    <div class="filters">
+      <select id="topicSel" aria-label="Topic">
+        <option value="all">All topics</option>
+      </select>
+      <select id="setSel" aria-label="Which cards">
+        <option value="all">All cards</option>
+      </select>
+    </div>
+    <div class="progress">
+      <div class="row"><span id="pos">Loading…</span><span id="tally"></span></div>
+      <div class="track"><i id="bar"></i></div>
+    </div>
+  </header>
+
+  <main class="stage" id="stage" aria-live="polite"></main>
+
+  <footer class="actions" id="actions"></footer>
+</div>
+<noscript><p style="padding:16px">This page needs JavaScript to show the flashcards.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
