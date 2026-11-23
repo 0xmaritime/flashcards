@@ -1,6 +1,6 @@
 /* Offline support. Network first, so a new version always shows when you are online;
    the last copy fetched is used when you are not. */
-const CACHE = 'qa-flashcards-v1';
+const CACHE = 'qa-flashcards-v2';
 const ASSETS = ['./', 'index.html', 'styles.css', 'app.js', 'deck.json', 'manifest.webmanifest', 'icon.svg'];
 
 self.addEventListener('install', e => {

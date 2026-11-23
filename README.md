@@ -5,11 +5,11 @@ A small mobile-first website for learning QA interview questions. Each card has 
 ## Using it
 
 - **In order / Random.** The switch at the top chooses between the study order and a shuffled deck. "Shuffle again" draws a new random order.
-- **Tap the card** (or press Space) to see the answer. Then mark it **Again** or **Got it**.
-- **Swipe** left for the next card and right for the previous one. On a keyboard: `←` `→` move, `1` again, `2` got it.
+- **Tap the card** (or press Space) to see the answer, then go to the next card.
+- **Swipe** left for the next card and right for the previous one. On a keyboard: `←` `→` move.
 - **Topic menu.** Study everything, one section, or one topic.
-- **Which cards.** All cards, the ones not yet "Got it", your "Again" pile, or a priority set.
-- Your marks, the order and your place are saved in the browser, so you continue where you stopped. Nothing is sent anywhere.
+- **Which cards.** All cards, or a priority set.
+- Nothing is scored or tracked. Only the topic, the order and your place are saved in the browser, so you continue where you stopped. Nothing is sent anywhere.
 - After the first visit the site also opens without a connection.
 
 ## Running it locally
@@ -28,7 +28,7 @@ Then open <http://localhost:8000>.
 |---|---|
 | `index.html` | The page |
 | `styles.css` | Layout and colours, light and dark |
-| `app.js` | Deck building, modes, marks, swipe and keyboard |
+| `app.js` | Deck building, modes, swipe and keyboard |
 | `deck.json` | The cards |
 | `sw.js`, `manifest.webmanifest`, `icon.svg` | Offline support and the home-screen icon |
 
@@ -38,7 +38,7 @@ Then open <http://localhost:8000>.
 
 | Field | Meaning |
 |---|---|
-| `id` | Stable id; marks are saved under it, so do not change it for an existing card |
+| `id` | Stable id; your place is saved under it, so do not change it for an existing card |
 | `s`, `t`, `tid` | Section, topic name, topic id |
 | `q` | The question |
 | `a` | The answer to say aloud, plain text |
